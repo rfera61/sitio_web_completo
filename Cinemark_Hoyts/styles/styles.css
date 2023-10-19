@@ -1,0 +1,595 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+    --color_principal: rgba(48, 68, 86);
+    --color_secundario: white;
+    --titulos: 'Hammersmith One', sans-serif;
+    --texto: 'Poppins', sans-serif;
+}
+
+.titulo {
+    font-family: var(--titulos);
+}
+
+body {
+    font-family: var(--texto);
+}
+
+.TITULOS {
+    font-family: var(--texto);
+    color: var(--color_principal);
+    font-weight: bold;
+    font-size: x-large;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+/* BARRA DE SECUENCIA*/
+
+.indicaciones {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0;
+    border: solid 0.5px rgba(128, 128, 128, 0.679);
+    margin-top: 1%;
+    border-radius: 0.4rem;
+    width: 100%;
+}
+
+.pasos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pasos i {
+    font-size: xx-large;
+    color: var(--color_principal);
+}
+
+.pasos p {
+    font-size: medium;
+    color: var(--color_principal);
+    padding: 1rem;
+}
+
+
+/* NAVBAR*/
+
+.container-fluid {
+    background-color: var(--color_principal);
+    font-family: var(--texto);
+    font-weight: bolder;
+}
+
+.nav-link {
+    color: var(--color_secundario);
+}
+
+
+.card {
+    margin-top: 1.5rem;
+}
+
+.card-header {
+    background-color: var(--color_principal);
+    color: white;
+}
+
+.card-footer {
+    background-color: var(--color_principal);
+}
+
+.texto_footer {
+    color: white;
+}
+
+.fa-brands {
+    color: var(--color_principal);
+    font-size: x-large;
+}
+
+
+/*PELICULA*/
+.table {
+    width: 80%;
+    border: solid 0.8px;
+}
+
+th,
+td {
+    text-align: center;
+    margin: 5px;
+}
+
+.img-fluid {
+    margin-top: 2rem;
+    width: 20rem;
+}
+
+/* PELICULA */
+
+/*CARTELERA - HOME*/
+#cartelera,
+.resultado-busqueda {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+.resultado-busqueda {
+    flex-direction: column;
+}
+
+.resultado-busqueda p {
+    text-align: center;
+    color: var(--color_principal);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#cartelera a h2,
+.resultado-busqueda h2 {
+    font-family: var(--texto);
+    color: var(--color_principal);
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding: 1rem;
+}
+
+main strong {
+    font-family: var(--texto);
+    color: var(--color_principal);
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.flex-box {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#busqueda {
+    padding: 0.4rem;
+    border-radius: 10px;
+    border: 1px solid var(--color_principal);
+}
+/*CARTELERA - HOME*/
+
+/*AYUDA*/
+
+.boton-ayuda {
+    background-color: rgba(165, 42, 42, 0.937);
+    padding: 0.5rem 1rem;
+    color: var(--color_secundario);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-family: var(--texto);
+    font-weight: bold;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.boton-ayuda:hover {
+    box-shadow: rgba(0, 0, 0, 0.579) 0 0 15px;
+}
+
+.preguntas_frecuentes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 3%;
+    border: solid 0.5px rgba(128, 128, 128, 0.679);
+    margin-top: 1%;
+    border-radius: 0.4rem;
+    width: 100%;
+    font-family: var(--texto);
+    color: var(--color_principal);
+}
+
+.preguntas_frecuentes h3{
+    font-weight: bold;
+}
+
+.pregunta{
+    font-weight: bold;
+    border-top: solid 1px rgba(128, 128, 128, 0.679);
+    padding: 2%;
+}
+
+.pregunta_box {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.5px rgba(128, 128, 128, 0.679);
+    border-radius: 0.4rem;
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem;
+    font-family: var(--texto);
+    color: var(--color_principal);
+}
+
+.contacto h3{
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.contacto button{
+    color: white;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*AYUDA*/
+
+
+/*SALAS*/
+.card-title{
+    font-family: var(--texto);
+    color: var(--color_principal);
+}
+.card-text{
+    font-family: var(--texto);
+    color:var(--color_principal)
+}
+/*SALAS*/
+
+/* LOGIN */
+
+.login{
+font-family: var(--texto);
+color: var(--color_principal);
+margin-top: 1.5rem;
+border-radius: 0.4rem;
+}
+
+.form-label{
+    margin-left: .5rem;
+}
+
+.cambio_contraseña{
+    font-size: small;
+}
+
+.btn{
+   background-color: var(--color_principal);
+   color: white;
+}
+
+.imagen_login{
+    border-radius: 0.4rem;
+    margin-top: .5rem;
+}
+
+.btn a{
+    font-family: var(--texto);
+    text-decoration: none;
+    color: white;
+}
+
+/* CUENTA */
+
+#saludo{
+    border: solid 0.5px rgba(128, 128, 128, 0.679);
+    border-radius: 0.4rem;
+    background-color: grey;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    margin-top: 1rem;
+    font-family: var(--texto);
+    text-align: center;
+}
+
+.puntos{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 4rem;
+    border: solid 0.5px rgba(128, 128, 128, 0.679);
+    border-radius: 0.4rem;
+    width: 100%;
+    font-family: var(--texto);
+    color: var(--color_principal);
+}
+
+.puntos h3{
+    align-self: flex-start;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.puntos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.puntos div div{
+    width: 30%;
+    height: 10rem;
+}
+
+
+.datos_puntos{
+    border-left: 1px solid var(--color_principal);
+    padding: 15px;
+    text-align: center;
+}
+
+.perfil{
+    margin-top: 1rem;
+    border: solid 0.5px rgba(128, 128, 128, 0.679);
+    border-radius: 0.4rem;
+    width: 100%;
+    padding: 2rem;
+    font-family: var(--texto);
+    color: var(--color_principal);
+}
+
+.perfil form h3{
+    align-self: flex-start;
+    font-weight: bold;
+
+}
+
+.perfil form, .perfil form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.perfil form  div input{
+    width: fit-content;
+}
+
+/* CONTRASEÑA */
+
+.contraseñas{
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+    gap: 0px;
+}
+
+.contraseñas h3{
+    margin-bottom: 0px;
+}
+
+
+/* MEDIA*/
+
+@media screen and (max-width: 550px) {
+    header {
+        padding: 0 15px;
+    }
+
+    .navbar-nav li {
+        text-align: center;
+    }
+
+    header nav div a img {
+        height: auto;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .indicaciones {
+        margin: 0.7rem 0;
+        padding-top: 2rem;
+    }
+
+    .pasos {
+        width: 100%;
+        padding: 0;
+    }
+
+    .pasos p {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .pasos i {
+        font-size: 1.5rem;
+    }
+
+    .TITULOS {
+        font-size: large;
+    }
+
+    #cartelera a,
+    #lista-peliculas div {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cartelera a img,
+    #lista-peliculas div img {
+        width: 70%;
+    }
+
+    /* Arreglos para el buscador en celu */
+    .resultado-busqueda {
+        align-items: center;
+    }
+
+    .resultado-busqueda img {
+        width: 70%;
+    }
+
+
+
+    .flex-box {
+        margin-bottom: 1rem;
+    }
+
+    .flex-box strong {
+        font-size: x-large;
+    }
+
+    .flex-box input {
+        width: 9rem;
+    }
+
+    .card text-center {
+        width: 100%;
+    }
+
+    .card_candy {
+        width: 13rem;
+        ;
+    }
+
+    .card-img-top {
+        width: 13rem;
+    }
+
+    .card-title {
+        font-size: medium;
+    }
+
+    .card-text {
+        font-size: small;
+    }
+
+    .preguntas_frecuentes{
+        font-size: smaller;
+        padding: 5%;
+    }
+
+    .preguntas_frecuentes h3{
+        font-size: medium;
+    }
+
+    .contacto h3{
+        font-size: medium;
+    }
+
+    .contacto .login{
+        font-size: smaller;
+    }
+    
+    .puntos{
+        padding: 0px;
+        gap: 0px;
+    }
+
+    .puntos div{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .puntos div div{
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .puntos h3{
+        font-size: medium;
+    }
+
+    .puntos div{
+        font-size: smaller;
+    }
+
+
+    .perfil form h3{
+        font-size: medium;
+    }
+
+    .perfil form .mb-3{
+        font-size: smaller;
+    }
+
+    #saludo{
+        font-size: large;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 820px) {
+
+    .indicaciones {
+        padding-top: 2rem;
+        margin: 2%;
+
+    }
+
+    .pasos {
+        width: 100%;
+        padding: 0;
+    }
+
+    .pasos p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .pasos i {
+        font-size: 3rem;
+    }
+
+    .preguntas_frecuentes{
+        padding: 3%;
+    }
+
+    .preguntas_frecuentes h3{
+        font-size: x-large;
+    }
+
+    .imagen_puntos img{
+       width: 90%;
+
+    }
+
+    .login{
+        padding: 3rem 0;
+        font-size: larger;
+    }
+
+}
